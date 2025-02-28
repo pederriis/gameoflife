@@ -7,7 +7,7 @@
 let cols;
 let rows;
 
-let resolution = 20;
+let resolution = 10;
 let grid;
 let next;
 let isGameRunning = false;
@@ -56,7 +56,9 @@ function draw() {
           grid[i][j].cellColor.blue,
           255 - floor(grid[i][j].state * fadeIndex)
         );
+        
       }
+      strokeWeight(0);
       rect(x, y, resolution, resolution);
     }
   }
